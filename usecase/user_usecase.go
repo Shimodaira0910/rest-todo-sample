@@ -11,8 +11,8 @@ import (
 )
 
 type IUserUsecase interface {
-	SignUp(user *model.User) (model.UserResponse, error)
-	Login(user *model.User) (string error)
+	SignUp(user model.User) (model.UserResponse, error)
+	Login(user model.User) (string, error)
 }
 
 type userUsecase struct{
